@@ -37,8 +37,10 @@
 									
 										<c:choose>
 											<c:when test="${sessionScope.email != null }">
-											<a href="logout"><i class="fa fa-lock"></i>${email }</a>
+											<%-- <a><i class="fa fa-lock"></i>${email }</a> --%>
+											<a href="logout"><i class="fa fa-lock"></i>${email }(Logout)</a>
 											<c:if test="${role !='admin'}">
+											<span>|</span>
 												<a href="mypage"><i class="fa fa-lock"></i>mypage</a>
 											</c:if>
 											
@@ -47,8 +49,8 @@
 											<a href="login"><i class="fa fa-lock"></i>Login / Register</a>
 											</c:when>
 										</c:choose>
-										<span>|</span>
-										<div class="header-cart dropdown">
+										<!-- <span>|</span> -->
+										<%-- <div class="header-cart dropdown">
 											<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 												<i class="fa fa-shopping-cart"></i> <small>0</small>
 											</a>
@@ -100,7 +102,7 @@
 													<a href="checkout.html" class="btn btn-primary">Checkout</a>
 												</div>
 											</div>
-										</div>
+										</div> --%>
 									</div>
 								</div>
 							</div>
