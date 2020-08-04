@@ -9,8 +9,8 @@ public class AladinOpenAPI {
 
 	final static String Driver = "oracle.jdbc.driver.OracleDriver";
 	final static String URL = "jdbc:oracle:thin:@localhost:1521:XE";
-	final static String user = "ssssuu";
-	final static String psw = "9531";
+	final static String user = "DB-USER";
+	final static String psw = "DB-PW";
 	
 	static Connection conn = null;
 	static PreparedStatement pstmt = null;
@@ -212,7 +212,7 @@ public class AladinOpenAPI {
 	
 	public static String GetUrl(String searchWord) throws Exception {
 		Map<String, String> hm = new HashMap<String, String>();
-		hm.put("ttbkey", "ttbmomomo12051044002");
+		hm.put("ttbkey", "TTBKEY");
 		hm.put("Query", URLEncoder.encode(searchWord, "UTF-8"));
 		hm.put("QueryType", "Title");
 		hm.put("MaxResults", "100");

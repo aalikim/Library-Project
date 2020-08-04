@@ -76,7 +76,7 @@ public class BookDetailController {
 		String setfrom = "libraria@libraria";
 		String tomail = email; // 받는 사람 이메일
 		String title = BooklistDetailservice.bshowDetail(bid).getTitle(); // 제목
-		String content = "["+title+ "] 책이 대여되었습니다. 홈페이지에서 확인해주세요"; // 내용
+		String content = "["+title+ "] 책이 대여되었습니다. 홈페이지에서 확인해주세요."; // 내용
 		
 		try {
 			MimeMessage message = mailSender.createMimeMessage();

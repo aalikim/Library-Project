@@ -98,7 +98,7 @@
 														onclick="passwordReset(); return false;">
 													<div class="clear"></div>
 												</form>
-												<br>
+												<br><br>
 												<form id="udpateInform" class="udpateInform">
 													<p class="form-row input-required">
 														<label> <span class="first-letter">NAME :
@@ -130,14 +130,16 @@
 														onclick="udpateInform(); return false;">
 													<div class="clear"></div>
 												</form>
+												<br><hr><br>
+												<h3>Lendded List</h3><br>
 												<table class="table table-bordered" id="dataTable3"
 													width="100%" cellspacing="0">
 													<thead>
 														<tr>
 															<!-- <th>Notice ID</th> -->
 															<th>Title</th>
-															<th>Isdate</th>
-															<th>Exdate</th>
+															<th>Borrowed date</th>
+															<th>Expired date</th>
 															<!-- <th></th> -->
 														</tr>
 													</thead>
@@ -159,6 +161,8 @@
 														</c:forEach>
 													</tbody>
 												</table>
+												<br><br>
+												<h3>Reserved List</h3><br>
 												<table class="table table-bordered" id="dataTable2"
 													width="100%" cellspacing="0">
 													<thead>
